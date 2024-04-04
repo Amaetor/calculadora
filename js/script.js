@@ -16,6 +16,10 @@ function resetearVariables() {
     // **TODO: ** Resetear el valor de las variable `operando1`
     // **TODO: ** Resetear el valor de las variable `operando2`
     // **TODO: ** Resetear el valor de las variable `operador`
+    valorEnPantalla = "";
+ operando1 = null;
+ operando2 = null;
+ operador = ""; //Puede ser +, -, *, /
 }
 
 //Función que actualiza el display (pantalla) de la calculadora.
@@ -83,5 +87,8 @@ function calcular() {
                     
                     valorEnPantalla = operando1 / operando2;
                    }
+    actualizarDisplay();
+    resetearVariables();
     }
+
 }
